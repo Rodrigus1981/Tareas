@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Faro - Periódico Local</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        text-align: center;
+        padding: 20px 0;
+      }
+      nav {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>PERIODICO EL FARO</h1>
+      <img
+        src="https://humanidades.com/wp-content/uploads/2016/07/periodico-1-e1560064202626-800x412.jpg"
+        alt="Logotipo El Faro"
+      />
+    </header>
+    <nav>
+      <ul>
+        <li><button onclick="openSection('inicio')">Inicio</button></li>
+        <li><button onclick="openSection('deportes')">Deportes</button></li>
+        <li><button onclick="openSection('negocios')">Negocios</button></li>
+      </ul>
+    </nav>
+    <section class="inicio-section">
+      <table>
+        <tr>
+          <th>
+            <h2>Artículos de Noticias</h2>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <strong>Título</strong>: ¿Qué es el dengue y cómo tratarlo?
+            <br />
+            <strong>Categoría:</strong> Enfermedades
+            <br />
+            <br />
+
+            El dengue es un virus transmitido por mosquitos que se propaga
+            principalmente a través del mosquito Aedes aegypti, también conocido
+            por ser portador de otros virus como la fiebre amarilla, el
+            chikungunya y el zika, según los Centros Para el Control y la
+            Prevención de Enfermedades de EE.UU., CDC.
+
+            <br />
+            <br />
+
+            La Administración de Alimentos y Medicamentos de EE.UU. (FDA, por
+            sus siglas en inglés) aprobó una vacuna contra el dengue en 2019,
+            pero no es para todos. Los CDC recomiendan Dengvaxia para niños de 9
+            a 16 años que tienen evidencia confirmada por laboratorio de una
+            infección por dengue y que viven en áreas de Estados Unidos donde el
+            dengue es endémico o se produce regularmente. La vacuna requiere
+            tres dosis, administradas con un intervalo de seis meses. En EE.UU.
+            no hay vacuna contra el dengue para adultos. Argentina aprueba el
+            uso de una vacuna japonesa contra el dengue Tampoco existe un
+            medicamento específico para tratar el dengue, según los CDC. Los
+            medicamentos de venta libre, como el paracetamol, pueden aliviar la
+            fiebre o el dolor, pero los expertos recomiendan no tomar aspirina
+            ni ibuprofeno porque pueden aumentar el riesgo de hemorragia, que –a
+            veces– se produce con el dengue.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Título</strong>: Nuevo HIT del Músico Chileno "Pablo
+            Ilabaca"
+            <br />
+            <strong>Categoría:</strong> Música
+            <br />
+            <br />
+
+            Se trata del nuevo hit de música del cantante oriundo de Santiago de
+            Chile, donde nos demuestra su talento para la música clásica y su
+            habilidad para tocar la guitarra. El músico ha sido reconocido por
+            su talento en la música y ha sido comparado con grandes artistas de
+            la música clásica como Beethoven y Mozart. A continuación les
+            dejamos una muestra de su último sencillo.
+
+            <br />
+            <br />
+
+            <audio controls>
+              <source
+                src="https://d38nvwmjovqyq6.cloudfront.net/va90web25003/companions/Foundations%20of%20Rock/13.01.mp3"
+                type="audio/mpeg"
+              />
+              Tu navegador no soporta el elemento de audio.
+            </audio>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Título</strong>: Avanza la compra de 24 aviones F-16 por
+            parte de Argentina
+            <br />
+            <strong>Categoría:</strong> Política
+            <br />
+            <br />
+
+            Argentina firmó un documento para la compra de 24 aviones F-16 a
+            Dinamarca. El país europeo se encuentra en proceso de reemplazar su
+            flota de F-16 por los nuevos F-35.
+
+            <br />
+            <br />
+
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/re0F_Vl2OLY?si=DRvZCg1Tug5EzI5I"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+
+            <br />
+            <br />
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="deportes-section" hidden>
+
+        <table>
+          <tr>
+            <th>
+              <h2>Artículos de Deportes</h2>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <strong>Título</strong>: ¡Triunfazo de Jarry! Derriba al número 8 del mundo y sigue avanzando en Miami
+              <br />
+              <strong>Categoría:</strong> Deportes
+              <br />
+              <br />
+  
+              ¿Qué pasó?
+              Lo de Nicolás Jarry (23° del ranking ATP) sigue avanzando en el Masters 1000 de Miami y se metió por primera vez en su carrera en los cuartos de final de este prestigioso certamen.
+  
+              <br />
+              <br />
+  
+              Tras ganar el pasado domingo un partidazo al brasileño Thiago Seyboth Wild con ambiente de Copa Davis, este martes el "Príncipe" derribó al 8 del planeta, el noruego Casper Ruud, por parciales de 7-6 (3) y 6-3, después de una hora y 49 minutos y jugando a un gran nivel para igualar su mejor resultado en un torneo de esta categoría, después de alcanzar en 2023 ronda de ocho mejores en Shanghai
+              
+              <br />
+              <br />
+              
+              <img
+              src="https://images2-mega.cdn.mdstrm.com/meganoticias/2024/03/26/443423_1_66031f1a00fdf.jpg?d=610x610"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Título</strong>: Para Sebastián y Gabriela Fundora perseguir campeonatos de boxeo es algo familiar
+              <br />
+              <strong>Categoría:</strong> Deportes
+              <br />
+              <br />
+  
+              Los dos miembros de la familia que actualmente boxean como profesionales tienen la oportunidad de hacer realidad el lema de la bandera familiar. Sebastián Fundora es uno de los mejores púgiles del mundo en el peso súper wélter, actualmente ubicado en el segundo puesto de la división en los rankings de ESPN y poseedor del título mundial interino del CMB. Su hermana menor Gabriela ha sido profesional durante poco más de un año y ya suma nueve combates en su haber. Tiene ocho triunfos (cuatro por nocaut) y la novena pelea terminó sin decisión.
+  
+              <br />
+              <br />
+  
+              <img
+              src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2022%2F1004%2Fr1071042_1296x729_16%2D9.jpg&w=570&format=jpg"
+              />
+          
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Título</strong>: La sinuosa búsqueda del tricampeonato de Óscar Valdez y su empeño en convertirse en una leyenda mexicana
+              <br />
+              <strong>Categoría:</strong> Deportes
+              <br />
+              <br />
+  
+              El excampeón Óscar Valdez confía en que puede lograr sus objetivos, pero todo eso podría desaparecer si no logra una victoria contra Liam Wilson el viernes.
+              <br />
+              <br />
+  
+              <img
+              src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2024%2F0321%2Fr1307993_1296x729_16%2D9.jpg&w=570&format=jpg"
+              />
+  
+              <br />
+              <br />
+            </td>
+          </tr>
+        </table>
+    </section>
+
+    <section class="negocios-section" hidden>
+        <table>
+          <tr>
+            <th>
+              <h2>Artículos de Negocios</h2>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              <strong>Título</strong>: Desestiman caso de Musk contra grupo de vigilancia del discurso de odio
+              <br />
+              <strong>Categoría:</strong> Negocios
+              <br />
+              <br />
+  
+              Un juez federal desestimó este lunes una demanda interpuesta por X, empresa de Elon Musk, contra un grupo de vigilancia por sus informes críticos sobre la incitación al odio en la plataforma de redes sociales.
+  
+              <br />
+              <br />
+              <img
+              src="https://cnnespanol.cnn.com/wp-content/uploads/2024/03/Copia-de-FOTO-PARA-WP-2024-03-25T124455.569.jpg?quality=100&strip=info&w=780&h=438&crop=1"
+              />
+  
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Título</strong>: Accede a una capacitación en línea gratuita para aprender a invertir en acciones líderes
+              <br />
+              <strong>Categoría:</strong> Negocios
+              <br />
+              <br />
+  
+              ¿Te gustaría aprender a invertir en los mercados financieros y a aprovechar las oportunidades diarias? Así arranca una novedosa iniciativa que pretende democratizar la formación sobre los mercados financieros y permitir a los pequeños inversores acceder a las mercados financieros a través de un completo entrenamiento gratuito.
+  
+              <br />
+              <br />
+  
+              <img
+              src="https://clasesdeeconomia.com/iforex/latam/img/wall-street.jpg"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>Título</strong>: Apple dice que la demanda del Departamento de Justicia de EE.UU. "amenaza lo que somos"
+              <br />
+              <strong>Categoría:</strong> negocios
+              <br />
+              <br />
+              Apple respondió a la demanda de Estados Unidos en un comunicado este jueves por la mañana, defendiendo su enfoque de innovación y afirmando que la acción legal del Gobierno de EE.UU. "amenaza lo que somos" y sentará un "precedente peligroso".
+              <br />
+              <br />
+
+              "En Apple, innovamos todos los días para hacer tecnología que la gente ame: diseñamos productos que funcionan perfectamente juntos, protegemos la privacidad y la seguridad de las personas y creamos una experiencia mágica para nuestros usuarios", dijo la compañía en un comunicado.
+  
+              <br />
+              <br />
+  
+              <img
+              src="https://cnnespanol.cnn.com/wp-content/uploads/2024/02/221116135001-clix-apple-sos-full-169.jpg?quality=100&strip=info&w=300&h=170&crop=1"
+              />
+  
+              <br />
+              <br />
+            </td>
+          </tr>
+        </table>
+    </section>
+  
+  </body>
+
+  <script>
+    function openSection(section) {
+      if (section === "inicio") {
+        document.querySelector(".inicio-section").hidden = false;
+        document.querySelector(".deportes-section").hidden = true;
+        document.querySelector(".negocios-section").hidden = true;
+      } else if (section === "deportes") {
+        document.querySelector(".inicio-section").hidden = true;
+        document.querySelector(".deportes-section").hidden = false;
+        document.querySelector(".negocios-section").hidden = true;
+      } else if (section === "negocios") {
+        document.querySelector(".inicio-section").hidden = true;
+        document.querySelector(".deportes-section").hidden = true;
+        document.querySelector(".negocios-section").hidden = false;
+      }
+    }
+  </script>
+</html>
